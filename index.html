@@ -49,30 +49,50 @@
     </nav>
   </header>
 
-
-
-
-
-
-  <section class="fixo">
-    <div class="user">
-        <div class="icon-user"></div>
-        <h2>User name</h2>
-        <p>Bem-vindo!</p>
-    </div>
-    <div class="input-user">
-      <form>
-        <textarea id="newTweet" rows="5" placeholder="O que está acontecendo?" onkeypress="size()"></textarea>
-        <div class="comandos">
-          <button id="button" onclick="postar()" disabled>Tweetar</button>
-          <div id="caracteres" class="blue">140</div>
+  <main class="d-flex flex-row">
+    <aside class="left">
+      <div class="profile">
+        <div class="top"></div>
+        <div class="info d-flex flex-row">
+          <div class="icon-user"></div>
+          <div class="user d-flex flex-column">
+            <h5>Karina Pereira</h5>
+            <p>@Ka_cpereira</p>
+          </div> 
         </div>
-      </form>
-    </div>
-  </section>
-  <section class="timeline">
-      <div id="feed"></div>
-  </section>
+      </div>
+      <div class="assuntos">
+        <h5>Assuntos para você</h5>
+        <p class="hashtag">#LaboratóriaSP</p>
+        <h6 class="likes">10,2 mil Tweets</p>
+        <p class="hashtag">#Feriado</p>
+        <h6 class="likes">386,7 mil Tweets</h6>
+        <p class="hashtag">#TalentFest</p>
+        <h6 class="likes">9,2 mil Tweets</h6>
+        <p class="hashtag">#Desafio</p>
+        <h6 class="likes">166,2 mil Tweets</p>
+        <p class="hashtag">#VemEmprego</p>
+        <h6 class="likes">936,9 mil Tweets</h6>
+      </div>
+    </aside>
+
+    <aside class="center">
+      <div class="input-user">
+        <form>
+          <textarea id="newTweet" cols="65" rows="1" placeholder="O que está acontecendo?" onkeypress="size()"></textarea>
+          <div class="comandos">
+            <button id="button" onclick="postar()" disabled>Tweetar</button>
+            <div id="caracteres" class="blue">140</div>
+          </div>
+        </form>
+      </div>
+      <div class="timeline">
+        <div id="feed"></div>
+      </div>
+    </aside>
+  </main>
+
+
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 </body>
